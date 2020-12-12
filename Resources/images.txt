@@ -1,0 +1,12 @@
+bmp
+eps
+gif
+ico
+jpeg
+jpg
+png
+psd
+raw
+svg
+tif
+tiff

@@ -1,0 +1,14 @@
+aac
+aif
+aifc
+aiff
+alac
+au
+caf
+flac
+m4a
+mp3
+ogg
+pcm
+wav
+wma
