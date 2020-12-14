@@ -1,4 +1,4 @@
-# FileFinder
+# Find That File!
  A Python based file finder
 
 ###### To add:
