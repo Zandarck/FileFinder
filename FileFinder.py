@@ -5,7 +5,8 @@ import glob  # glob is used for searching
 
 def start_find():
     start = int(input("""What type of file do you want to find?\n
-        1 - Document, 2 - Video, 3 - Audio, 4 - Photo\n> """))
+        1 - Document, 2 - Video, 3 - Audio, 4 - Photo\n
+        5 - I'll choose extension myself\n> """))
     if start == 1:
         print("1\n\n\n")
         start_find()
@@ -20,6 +21,10 @@ def start_find():
 
     elif start == 4:
         print("4\n\n\n")
+        start_find()
+
+    elif start == 5:
+        print("5\n\n\n")
         start_find()
 
     else:
