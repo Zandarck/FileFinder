@@ -17,8 +17,8 @@ From here follow the prompts (file type, file name and location) and the program
 - [ ] Search by:
   - [x] ~~Type~~
   - [ ] Edit/creation date
-  - [ ] To/From date
--[ ] Search style:
+  - [ ] To/from date
+- [ ] Search style:
     - [ ] Fuzzy
     - [ ] Strict
 - [ ] Additional:
