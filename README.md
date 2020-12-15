@@ -5,7 +5,7 @@
 
 
  #### Usage:
- Load up a terminal/command prompt in the main directory and type:
+ Load up a terminal/command prompt in the main directory and type (or paste):
 
  ```python FindThatFile.py```
 
