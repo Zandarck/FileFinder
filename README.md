@@ -2,7 +2,7 @@
  A Python based file finder!
 
  Want to find a file? This may help! Uses the text files in the _Resources_ folder to create a list with the file name to add well known file extentions and hopefully it will find that file. WIP.
- 
+
  Any feedback will be greatly appreciated as this is pretty much my first working/public program.
 
 
@@ -25,6 +25,7 @@ From here follow the prompts (file type, file name and location) and the program
     - [ ] Strict
 - [ ] Additional:
   - [ ] Supply the directory
+  - [ ] Generate text file with results
   - [x] ~~Add file paths to a document~~
   - [ ] Recursive search (subdirectories)
   - [ ] Open directory
