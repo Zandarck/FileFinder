@@ -15,7 +15,7 @@ From here follow the prompts (file type, file name and location) and the program
 
 ###### To add:
 - [ ] Search by:
-  - [x] Type
+  - [x] ~~Type~~
   - [ ] Edit/creation date
   - [ ] To/From date
 -[ ] Search style:
@@ -23,7 +23,7 @@ From here follow the prompts (file type, file name and location) and the program
     - [ ] Strict
 - [ ] Additional:
   - [ ] Supply the directory
-  - [x] Add file paths to a document
+  - [x] ~~Add file paths to a document~~
   - [ ] Recursive search (subdirectories)
   - [ ] Open directory
   - [ ] Open Explorer showing the files
