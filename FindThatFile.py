@@ -7,27 +7,27 @@ def start_find():
         4 - Photo, 5 - Self-defined\n> """))
     if start == 1:
         f_type = "doc"
-        print(f_type)
+        print("\n")
         choice_find(f_type)
 
     elif start == 2:
         f_type = "vid"
-        print(f_type)
+        print("\n")
         choice_find(f_type)
 
     elif start == 3:
         f_type = "aud"
-        print(f_type)
+        print("\n")
         choice_find(f_type)
 
     elif start == 4:
         f_type = "img"
-        print(f_type)
+        print("\n")
         choice_find(f_type)
 
     elif start == 5:
         f_type = "usr"
-        print(f_type)
+        print("\n")
         choice_find(f_type)
 
     else:
