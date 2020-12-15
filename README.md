@@ -11,7 +11,7 @@
 
  ```python FindThatFile.py```
 
-From here follow the prompts (file type, file name and location) and the program will give you the locations of any matching files.
+From here follow the prompts (file type, file name and location) and the program will give you the locations of any matching files. You can search file types with a wildcard (*) if you use the "Self-defined" option.
 
 
 
@@ -25,6 +25,7 @@ From here follow the prompts (file type, file name and location) and the program
     - [ ] Strict
 - [ ] Additional:
   - [ ] Supply the directory
+  - [ ] Flags
   - [ ] Generate text file with results
   - [x] ~~Add file paths to a document~~
   - [ ] Recursive search (subdirectories)
