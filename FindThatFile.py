@@ -2,9 +2,10 @@ import glob  # glob is used for searching
 
 
 def start_find():
+    global rec_search
     start = int(input("""What type of file do you want to find?\n
         1 - Document, 2 - Video, 3 - Audio\n
-        4 - Photo, 5 - Self-defined\n> """))
+        4 - Photo, 5 - Program/Archive, 6 - Self-defined\n> """))
     if start == 1:
         f_type = "doc"
         print("\n")
@@ -26,6 +27,11 @@ def start_find():
         choice_find(f_type)
 
     elif start == 5:
+        f_type = "arc"
+        print("\n")
+        choice_find(f_type)
+
+    elif start == 6:
         f_type = "usr"
         print("\n")
         choice_find(f_type)
@@ -36,6 +42,7 @@ def start_find():
 
 
 def choice_find(f_type):
+    global rec_srch
     if f_type == "doc":
         print("Searching for documents:")
         ext_list = open("Resources/documents.txt", "r")
@@ -48,7 +55,10 @@ def choice_find(f_type):
         for item in name_type:
             results.append(glob.glob(f_loc + item, recursive=True))
         fil_results = list(filter(None, results))
-        print(fil_results)
+        if len(fil_results) == 0:
+            print("Nothing found.")
+        else:
+            print(fil_results)
 
     elif f_type == "vid":
         print("Searching for videos:")
@@ -62,7 +72,10 @@ def choice_find(f_type):
         for item in name_type:
             results.append(glob.glob(f_loc + item, recursive=True))
         fil_results = list(filter(None, results))
-        print(fil_results)
+        if len(fil_results) == 0:
+            print("Nothing found.")
+        else:
+            print(fil_results)
 
     elif f_type == "aud":
         print("Searching for audio tracks:")
@@ -76,7 +89,10 @@ def choice_find(f_type):
         for item in name_type:
             results.append(glob.glob(f_loc + item, recursive=True))
         fil_results = list(filter(None, results))
-        print(fil_results)
+        if len(fil_results) == 0:
+            print("Nothing found.")
+        else:
+            print(fil_results)
 
     elif f_type == "img":
         print("Searching for images:")
@@ -90,7 +106,27 @@ def choice_find(f_type):
         for item in name_type:
             results.append(glob.glob(f_loc + item, recursive=True))
         fil_results = list(filter(None, results))
-        print(fil_results)
+        if len(fil_results) == 0:
+            print("Nothing found.")
+        else:
+            print(fil_results)
+
+    elif f_type == "arc":
+        print("Searching for program/archive:")
+        ext_list = open("Resources/archive.txt", "r")
+        list_lines = ext_list.read().splitlines()
+        f_name = input("What would you like to find?:\n> ")
+        f_loc = input("Where do you want to search?:\n> ")
+        name_type = [f_name + "." + line for line in list_lines]
+        ext_list.close()
+        results = []
+        for item in name_type:
+            results.append(glob.glob(f_loc + item, recursive=True))
+        fil_results = list(filter(None, results))
+        if len(fil_results) == 0:
+            print("Nothing found.")
+        else:
+            print(fil_results)
 
     elif f_type == "usr":
         print("Searching for user defined extention:")
@@ -100,7 +136,10 @@ def choice_find(f_type):
         results = []
         results.append(glob.glob(f_loc + f_name + f_type, recursive=True))
         fil_results = list(filter(None, results))
-        print(fil_results)
+        if len(fil_results) == 0:
+            print("Nothing found.")
+        else:
+            print(fil_results)
 
 
 start_find()
